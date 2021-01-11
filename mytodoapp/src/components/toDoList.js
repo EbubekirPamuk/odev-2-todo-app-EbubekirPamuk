@@ -10,12 +10,12 @@ export default class toDoList extends Component {
 							<input
 								className="toggle"
 								type="checkbox"
-								onClick={() => this.props.isActiveItem(todos.id)}
+								onClick={() => this.props.isActiveItem(todos.line)}
 							/>
 							<label>{todos.todo}</label>
 							<button
 								className="destroy"
-								onClick={() => this.props.removeItem(todos.id)}
+								onClick={() => this.props.removeItem(todos.line)}
 							></button>
 						</div>
 					</li>
